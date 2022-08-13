@@ -12,7 +12,24 @@ body {
 section {
   overflow: hidden !important;
 }
-
+.instr_name{
+  color : #E3E3E3;
+  /* font-family: 'Trocchi'; */
+  text-decoration: underline;
+  text-decoration-color: #eb8c34;
+   font-size: 45px;
+   font-weight: normal;
+   line-height: 48px;
+   margin: 0;
+}
+.instr_name:hover  {
+  color : white;
+  text-decoration: none;
+  /* text-decoration-color: none; */
+}
+.onHvrBtn:hover{
+  background-color: #F56262;
+}
 /* line 12, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_common.scss */
 .message_submit_form:focus {
   outline: none;
