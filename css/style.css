@@ -15,12 +15,26 @@ section {
 .instr_name{
   color : #E3E3E3;
   /* font-family: 'Trocchi'; */
-  text-decoration: underline;
-  text-decoration-color: #eb8c34;
+  /* text-decoration: underline; */
+  /* text-decoration-color: grey; */
    font-size: 45px;
    font-weight: normal;
    line-height: 48px;
    margin: 0;
+   padding: 3px 0 8px;
+   position: relative;
+}
+.instr_name::before{
+  content: "";
+  position: absolute;
+  left: 7%;
+  bottom: 16px;
+  width: 60%;
+  height: 30%;
+  transform: skew(-12deg) translateX(-10%) translateY(50%);
+  background: rgb(231,53,53);
+  background: linear-gradient(81deg, rgba(231,53,53,0.9934348739495799) 32%, rgba(255,158,0,1) 78%);
+  z-index: -1;
 }
 .instr_name:hover  {
   color : white;
