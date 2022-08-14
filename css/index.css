@@ -24,6 +24,12 @@
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
+.smallScreen{
+  margin: 10px;
+  /* width: 70%; */
+  text-align: center;
+  /* font-size: 15px; */
+}
 
 /* Modal Content (Image) */
 .modal-content {
@@ -69,6 +75,7 @@
     top: 155px;
     right: 35px;
     color: #f1f1f1;
+    /* background-color: green; */
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
@@ -84,6 +91,21 @@
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
     .modal-content {
-        width: 100%;
+        max-width: 60%;
+    }
+    /* The Close Button */
+    .close {
+        position: absolute;
+        top: 100px;
+        right: 35px;
+        color: #f1f1f1;
+        /* background-color: green; */
+        font-size: 70px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+    .smallScreen{
+      width: 100%;
+      text-align: center;
     }
 }
